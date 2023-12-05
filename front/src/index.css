@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 2,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+.btn {
+  @apply bg-transparent md:bg-blue-500 text-blue-500 md:text-white px-3 py-2 rounded-md font-bold hover:text-blue-700 md:hover:text-white md:hover:bg-blue-700 transition-colors flex justify-center items-center gap-1 disabled:bg-slate-500;
+}
+
+.contextMenuItem {
+  @apply bg-white hover:bg-slate-100 list-none px-3 py-3 overflow-clip flex items-center gap-1 cursor-pointer;
+}
+
+.contextIcon {
+  @apply text-slate-500;
+}
+
+.contextLabel {
+  @apply px-2;
+}
+
+.input {
+  @apply px-4 py-2 rounded-md bg-slate-200 border-b-2 border-slate-500 focus:border-slate-950 focus:outline-none;
+}
+
+.disappearOnMobile {
+  @apply hidden  md:block;
+}
